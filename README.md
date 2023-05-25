@@ -2,6 +2,13 @@
 
 A cli tool for generating & deriving key share for local fairyring testnet
 
+## Build
+
+```bash
+go install
+go build
+```
+
 ## Usage
 
 ### Generate Shares
