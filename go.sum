@@ -1,9 +1,13 @@
+filippo.io/age v1.1.1 h1:pIpO7l151hCnQ4BdyBujnGP2YlUo0uj6sAVNHGBvXHg=
+filippo.io/age v1.1.1/go.mod h1:l03SrzDUrBkdBx8+IILdnn2KZysqQdbEBUQ4p3sqEQE=
+github.com/FairBlock/DistributedIBE v0.0.0-20230528025616-f58fb2b93eaf h1:b4eYrFmDvCv1cA4dIPsmH6cGhURs6aIERShJczjwFuA=
+github.com/FairBlock/DistributedIBE v0.0.0-20230528025616-f58fb2b93eaf/go.mod h1:qXpLBzZiSdWoweJkE/lAIPedf6GOl7WsYM8rxrZCCDk=
 github.com/cpuguy83/go-md2man/v2 v2.0.2/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46tRHOmNcaadrF8o=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/drand/kyber v1.2.0 h1:22SbBxsKbgQnJUoyYKIfG909PhBsj0vtANeu4BX5xgE=
 github.com/drand/kyber v1.2.0/go.mod h1:6TqFlCc7NGOiNVTF9pF2KcDRfllPd9XOkExuG5Xtwfo=
-github.com/drand/kyber-bls12381 v0.2.6 h1:bM93oy2o0ORt+NwZ6uRyZsMPgUvSwJ1ZOALX6VjD4xc=
-github.com/drand/kyber-bls12381 v0.2.6/go.mod h1:H4y9bLPu7KZA/1efDg+jtJ7emKx+ro3PU7/jWUVt140=
+github.com/drand/kyber-bls12381 v0.2.5 h1:4ugiCmXQsvgAuylSk929rK49WGFxCxT/7ArH2vw6Tlg=
+github.com/drand/kyber-bls12381 v0.2.5/go.mod h1:8fm2tmRaAdYRGMTh5tjF7qrGHywC+rmM5hrUFL+9fCI=
 github.com/inconshreveable/mousetrap v1.1.0 h1:wN+x4NVGpMsO7ErUn/mUI3vEoE6Jt13X2s0bqwp9tc8=
 github.com/inconshreveable/mousetrap v1.1.0/go.mod h1:vpF70FUmC8bwa3OWnCshd2FqLfsEA9PFc4w1p2J65bw=
 github.com/kilic/bls12-381 v0.1.0 h1:encrdjqKMEvabVQ7qYOKu1OvhqpK4s47wDYtNiPtlp4=

@@ -1,12 +1,12 @@
 package cmd
 
 import (
-	"ShareGenerator/vss_kyber"
 	"encoding/binary"
 	"encoding/hex"
 	"encoding/json"
 	"errors"
 	"fmt"
+	distIBE "github.com/FairBlock/DistributedIBE"
 	"github.com/spf13/cobra"
 	"strconv"
 )
@@ -55,7 +55,7 @@ var generateCmd = &cobra.Command{
 			fmt.Printf("invalid threshold provided, expecting number, got %v\n", args[1])
 			return
 		}
-		shares, mpk, commitments, err := vss_kyber.GenerateShares(uint32(num), uint32(threshold))
+		shares, mpk, commitments, err := distIBE.GenerateShares(uint32(num), uint32(threshold))
 		if err != nil {
 			fmt.Printf("error while generating shares: %s\n", err.Error())
 			return

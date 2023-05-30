@@ -1,11 +1,11 @@
 package cmd
 
 import (
-	"ShareGenerator/vss_kyber"
 	"encoding/hex"
 	"encoding/json"
 	"errors"
 	"fmt"
+	distIBE "github.com/FairBlock/DistributedIBE"
 	bls "github.com/drand/kyber-bls12381"
 	"github.com/spf13/cobra"
 	"strconv"
@@ -59,7 +59,7 @@ var deriveCmd = &cobra.Command{
 		}
 
 		s := bls.NewBLS12381Suite()
-		extractedKey := vss_kyber.Extract(s, share, uint32(shareIndex), []byte(args[2]))
+		extractedKey := distIBE.Extract(s, share, uint32(shareIndex), []byte(args[2]))
 
 		extractedBinary, err := extractedKey.SK.MarshalBinary()
 		if err != nil {
