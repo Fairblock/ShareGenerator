@@ -17,9 +17,9 @@ type DeriveResult struct {
 }
 
 var deriveCmd = &cobra.Command{
-	Use:                   "derive [share-in-hex] [share-index] [height]",
-	Short:                 "Derive Share from a specific height",
-	Long:                  `Derive Share from a specific height`,
+	Use:                   "derive [share-in-hex] [share-index] [ID]",
+	Short:                 "Derive Share from a specific ID",
+	Long:                  `Derive Share from a specific ID`,
 	DisableFlagsInUseLine: true,
 	Args: func(cmd *cobra.Command, args []string) error {
 		if len(args) < 3 {
@@ -27,9 +27,6 @@ var deriveCmd = &cobra.Command{
 		}
 		if _, err := strconv.ParseUint(args[1], 10, 64); err != nil {
 			return errors.New("invalid share index provided, expecting number")
-		}
-		if _, err := strconv.ParseUint(args[2], 10, 64); err != nil {
-			return errors.New("invalid height provided, expecting number")
 		}
 		return nil
 	},
@@ -50,11 +47,6 @@ var deriveCmd = &cobra.Command{
 		shareIndex, err := strconv.ParseUint(args[1], 10, 64)
 		if err != nil {
 			fmt.Println("invalid share index provided, expecting number")
-			return
-		}
-
-		if _, err := strconv.ParseUint(args[2], 10, 64); err != nil {
-			fmt.Println("invalid height provided, expecting number")
 			return
 		}
 
